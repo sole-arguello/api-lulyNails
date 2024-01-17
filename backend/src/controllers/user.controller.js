@@ -3,7 +3,7 @@ import { userDaoService } from "../service/index.js";
 
 export class UserController {
 
-    static register = async (req, res, next) => {
+    static registerUser = async (req, res, next) => {
         try {
             const newUser = req.body
             const userDto = new UserDto(newUser)
