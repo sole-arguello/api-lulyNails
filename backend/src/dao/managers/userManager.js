@@ -1,4 +1,4 @@
-import { userModel } from "../models/user.model.js";
+import { userModel } from "../managers/models/user.model.js";
 
 export class UserManager {
 
