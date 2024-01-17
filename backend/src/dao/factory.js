@@ -17,3 +17,5 @@ switch(environment){
         userDao = new UserManager();
         break;
 }
+
+export { userDao }
