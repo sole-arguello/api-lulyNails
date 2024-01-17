@@ -10,12 +10,12 @@ export class ConnectDB {
     }
 
     static getInstance() {
-        if (!this.#instance) {
+        if (this.#instance) {
             console.log('>>> DB instance');
             return this.#instance 
         }else{
             this.#instance = this.#getConection();
-            return this.#instance
+            return
         }
     }
 }
