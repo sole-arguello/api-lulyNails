@@ -19,7 +19,7 @@ export const configEnv = {
     db: {
         mongoUrl: process.env.MONGO_URL
     },
-    enviroment: {
+    environment: {
         persistence: persistenceMode
     }
 }
