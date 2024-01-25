@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        enum: ['admin', 'employee'],
+        enum: ['admin', 'employee', 'client'],
         default: 'employee'
     },
     last_connection: {
@@ -40,6 +40,15 @@ const userSchema = new mongoose.Schema({
         required: true,
         enum: ['complete', 'incomplete', 'pending'],
         default: 'pending'
+    },
+    documents: {
+      type: [
+        {
+            name:{ type: String, required: true },
+            reference: { type: String, required: true },
+        },
+      ],
+      default: [],  
     },
     avatar: {
         type: String,
