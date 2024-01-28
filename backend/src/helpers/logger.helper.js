@@ -41,27 +41,30 @@ const prodLogger = winston.createLogger({
     ]
 })
 
+
 const devLogger = winston.createLogger({
     format: winston.format.combine(
-        colorizeLevel(),
         winston.format.simple(),
         winston.format.timestamp(),
-        winston.format.printf((info) => `[${info.timestamp}] ${info.level} ${info.message}`)
     ),
     transports: [
+        //para mostrar en consola
         new winston.transports.Console({
             level: "debug",
             format: winston.format.combine(
-                winston.format.simple(),
-                winston.format.timestamp(),
+                colorizeLevel(),
                 winston.format.printf((info) => `[${info.timestamp}] ${info.level} ${info.message}`)
             ),
         }),
+        //para mostrar en archivo
         new winston.transports.File({
             filename: path.join(__dirname, '/logs/error.log'), 
             maxsize: 5120000, 
             maxFiles: 5,
             level: 'debug',
+            format: winston.format.combine(
+                winston.format.printf((info) => `[${info.timestamp}] ${info.level} ${info.message}`)
+            )
         })
     ]
 })
