@@ -1,4 +1,5 @@
 import { userModel } from "../managers/models/user.model.js";
+import { logger } from "../../helpers/logger.helper.js";
 
 export class UserManager {
 
@@ -12,7 +13,7 @@ export class UserManager {
             const createdUser = await this.model.create(user)
             return createdUser
         } catch (error) {
-            console.log('Error al crear usuario: manager', error)
+            logger.error('Error al crear usuario: manager -', error)
             throw new Error(error)
         }
     }
