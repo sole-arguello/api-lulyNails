@@ -19,11 +19,13 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
+        trim: true
     },
     password: {
         type: String,
         required: true,
+        trim: true
     },
     role: {
         type: String,
@@ -36,9 +38,8 @@ const userSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        Boolean: true,
         required: true,
-        enum: ['complete', 'incomplete', 'pending'],
+        enum: ['complete', 'incomplete', 'pending', 'active', 'inactive'],
         default: 'pending'
     },
     documents: {
