@@ -1,4 +1,4 @@
-## En ./package.json
+## En backend\package.json
 ```json
 MAL❌
 {
@@ -12,7 +12,7 @@ MAL❌
     
 ```
 
-## ./schemas/user/register.schema.js
+## backend\src\schemas\user\register.schema.js
 
 ```js
 // Linea 34
@@ -24,3 +24,13 @@ MAL❌
         .messages({ ...JoiMsgError.errorMsgPassword, ...JoiMsgError.errorMessage }),
 }
 ```
+
+## backend\src\dao\factory.js
+```js
+switch(environment){
+    case 'development':
+}
+```
+
+Falta el de producción, error relacionado con package.json
+Siempre en desarrollo se debe ejecutar el entorno de desarrollo

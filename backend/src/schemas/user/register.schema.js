@@ -31,7 +31,7 @@ export const registerSchema = joi.object({
         .email()
         .messages(JoiMsgError.errorMessage),
 
-    pasword: joi
+    password: joi
         .string()
         .required()
         .pattern(/^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[¡!$%^&*()_+|~={}:";'<>¿?,.#])[a-zA-Z0-9¡!$%^&*()_+|~={}:";'<>¿?,.#].{8,}$/)
