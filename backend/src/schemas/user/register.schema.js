@@ -23,7 +23,7 @@ export const registerSchema = joi.object({
         .integer()
         .min(18)
         .optional()
-        .messages(JoiMsgError.errorMessage ),
+        .messages(JoiMsgError.errorMessage),
 
     email: joi
         .string()
@@ -35,5 +35,6 @@ export const registerSchema = joi.object({
         .string()
         .required()
         // .pattern(/^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[¡!$%^&*()_+|~={}:";'<>¿?,.#])[a-zA-Z0-9¡!$%^&*()_+|~={}:";'<>¿?,.#].{6,}$/)
+        .pattern(/^(?=\S+$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[¡!$%^&*()_+|~=`{}:";'<>¿?,.])[a-zA-Z0-9¡!$%^&*()_+|~=`{}:";'<>¿?,.]{8,}$/)
         .messages({ ...JoiMsgError.errorMsgPassword, ...JoiMsgError.errorMessage }),
 })
