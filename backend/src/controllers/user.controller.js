@@ -15,10 +15,10 @@ export class UserController {
 
             if(userDto){
                 await userDaoService.createUser(userDto)
-                res.status(201).json({message: 'Usuario creado', user: {...newUser}})
+                return res.status(201).json({message: 'Usuario creado', user: {...newUser}})
             }
             logger.error('Error al Crear el usuario : controller - ', newUser)
-            res.status(400).json({message: 'Error al registrar el usuario'})
+            return res.status(400).json({message: 'Error al registrar el usuario'})
         } catch (error) {
             logger.error('Error al registrar el usuario: controller - ', error)
             console.error('Error al registrar el usuario: controller - ', error)
