@@ -2,3 +2,21 @@
 [2024-01-28T12:09:08.953Z] info >>> DB connection
 [2024-01-28T12:09:08.970Z] info Development Environment
 [2024-01-28T12:09:08.992Z] info Server running on port 8080
+[2024-01-29T17:29:13.389Z] info >>> DB connection
+[2024-01-29T17:29:13.405Z] info Development Environment
+[2024-01-29T17:29:13.433Z] info Server running on port 8080
+[2024-01-29T17:38:25.121Z] error Error al registrar el usuario: controller -  El campo "pasword" es requerido
+[2024-01-29T17:44:00.905Z] info >>> DB connection
+[2024-01-29T17:44:00.919Z] info Development Environment
+[2024-01-29T17:44:00.939Z] info Server running on port 8080
+[2024-01-29T17:44:28.901Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-01-29T17:45:40.575Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-01-29T17:45:42.347Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-01-29T17:46:06.835Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-01-29T17:46:08.313Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-01-29T17:46:08.986Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-01-29T17:46:09.898Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-01-29T17:46:35.550Z] info >>> DB connection
+[2024-01-29T17:46:35.564Z] info Development Environment
+[2024-01-29T17:46:35.585Z] info Server running on port 8080
+[2024-01-29T17:46:56.669Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
