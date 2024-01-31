@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js",
-    "start-dev": "nodemon src/index.js --mode development --port 8080"
+    "dev": "nodemon src/index.js --mode development --port 8080"
   },
   "keywords": [],
   "author": "",
