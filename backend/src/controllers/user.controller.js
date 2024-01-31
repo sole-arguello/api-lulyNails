@@ -12,7 +12,7 @@ export class UserController {
 
             const newUser = req.body
             const userDto = new UserDto(newUser)
-
+            console.log(userDto)
             if(userDto){
                 await userDaoService.createUser(userDto)
                 res.status(201).json({message: 'Usuario creado', user: {...newUser}})
