@@ -61,7 +61,7 @@ const devLogger = winston.createLogger({
             filename: path.join(__dirname, '/logs/error.log'), 
             maxsize: 5120000, 
             maxFiles: 5,
-            level: 'debug',
+            level: 'error',
             format: winston.format.combine(
                 winston.format.printf((info) => `[${info.timestamp}] ${info.level} ${info.message}`)
             )
