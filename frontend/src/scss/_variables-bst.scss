@@ -1,0 +1,6 @@
+$font-family-base: map-get($tipografia , font-5 );
+$primary: map-get($fondos , fondo-3 );
+$box-shadow-sm: map-get($sombras , sombraBox-5 );
+$navbar-light-color: map-get($color-text , text-4 );
+$navbar-light-hover-color: $hover-1;
+$navbar-light-toggler-border-color: map-get($color-text , text-4 );

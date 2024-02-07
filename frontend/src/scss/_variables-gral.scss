@@ -1,0 +1,90 @@
+$hover-1: rgb(104, 87, 66);
+$img-fondo1: url(../assets/contacto/depositphotos_317114954-stock-photo-closeup-of-nails-in-uv.webp);
+
+
+$tipografia: (
+  font-1: "Monserrat",
+  font-2: "Grandstander",
+  font-3: "Noto Sans Vai",
+  font-4: "Raleway",
+  font-5: "Roboto",
+);
+$fondos: (
+  /*main*/ 
+  degrade1: linear-gradient(to bottom, rgb(241, 235, 236), rgb(238, 173, 178)),
+  degrade2: linear-gradient(to bottom, rgb(236, 226, 228), rgb(238, 173, 178)),
+  degrade3: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+  /*card*/ 
+  fondo-1: rgb(219, 200, 200),
+  fondo-2: rgb(212, 179, 179),
+  fondo-3: rgb(175, 95, 107),
+  fondo-4: rgb(97, 20, 45),
+  fondo-5: rgb(173, 79, 93),
+  fondo-6: #fff,
+  fondo-7: #e1306c,
+  fondo-8: #3b5999,
+  fondo-9: #de463b,
+  fondo-10: #0df053,
+  fondo-11: rgb(59, 58, 58),
+);
+
+$bordes: (
+  borde-1: 1px solid rgb(187, 185, 185),
+  borde-2: 1px solid rgb(168, 167, 167),
+  borde-3: 16px solid rgb(209, 136, 148),
+  borde-4: 2px solid rgb(209, 136, 148),
+  borde-5: 1px solid rgb(223, 211, 211),
+  borde-6: 1px solid rgb(97, 20, 45),
+  /*borde video*/ borde-7: 1px solid black,
+  borde-8: 1px solid bisque,
+);
+
+$color-text: (
+  text-1: rgb(97, 20, 45),
+  text-2: rgb(175, 119, 128),
+  text-3: rgb(117, 72, 72),
+  text-4: blanchedalmond,
+  text-5: bisque,
+  text-6: rgb(253, 211, 163),
+  text-7: white,
+  text-8: rgb(131, 83, 98),
+  text-9: black,
+  text-10: rgb(43, 41, 41),
+  text-11: #fff,
+  /*text-8: rgb(53, 52, 52),*/
+);
+
+$sombras: (
+  sombraText-1: 1px 1px 2px rgb(58, 56, 56),
+  sombraText-2: 1px 1px 2px black,
+  sombraText-3: 1px 1px 2px rgb(233, 225, 225),
+  sombraText-4: 1px 1px 2px rgb(66, 65, 65),
+  sombraText-5: 1px 1px 2px rgb(146, 140, 140),
+  sombraText-6: 0px -1px 0px rgba(0, 0, 0, 0.4),
+
+  sombraBox-1: 1px 1px 2px black,
+  sombraBox-2: 0 0 16px #00000080,
+  sombraBox-3: -2px -2px 5px black,
+  sombraBox-4: 10px 10px 10px -5px rgb(179, 179, 179),
+  sombraBox-5: 2px 2px 5px black,
+  sombraBox-6: 0 10px 10px rgba(0, 0, 0, 0.1),
+  sombraBox-7: 0px 1px 10px rgba(0, 0, 0, 0.3),
+
+  /*sombraBox-6: 1px 1px 2px rgb(58, 56, 56),*/
+);
+
+$efectos: (
+  transicion-1: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+  transition-2: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+  );
+
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
