@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
+@import "variables-gral";
+@import "variables-bst";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import "mixins";
+@import "reset";
+@import "navBar";
+@import "home";
+@import "watsapBtn";
+@import "footer";
+@import "servicios";
+@import "nosotros";
+@import "galeria";
+@import "contacto";
+@import "responsive";
+
+

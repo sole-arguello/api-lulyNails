@@ -1,0 +1,370 @@
+/* mayor igual 576px*/
+@include media-breakpoint-up(sm) {
+  .home {
+    &__service {
+      &--articulo {
+        &-card {
+          .card__img {
+            width: 380px;
+            height: 380px;
+          }
+          .card__info {
+            &--line {
+              width: 20%;
+              margin: 1rem 12rem 2rem 12rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .watsap {
+    .btn-wsp {
+      right: 30px;
+    }
+  }
+}
+/* mayor igual 768px*/
+@include media-breakpoint-up(md) {
+  .home {
+    &__portada {
+      &--container {
+        .portada__container {
+          &--img {
+            height: 600px;
+          }
+          &--info {
+            &-title {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+    &__service {
+      padding: 3rem 4rem 0 4rem;
+      &--articulo {
+        &-card {
+          .card__img {
+            width: 250px;
+            height: 250px;
+          }
+          .card__info {
+            &--line {
+              margin: 1rem 6.8rem 2rem 6.8rem;
+            }
+            &--title {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .watsap {
+    .btn-wsp {
+      bottom: 120px;
+    }
+  }
+  .service {
+    .service__manicure,
+    .service__otros {
+      .service__manicure--title,
+      .service__otros--title {
+        font-size: 3.5rem;
+      }
+      .service__manicure--container,
+      .service__otros--container {
+        .service__manicure--container-card,
+        .service__otros--container-card {
+          width: 90%;
+          .card__img {
+            width: 400px;
+            height: 400px;
+          }
+
+          .card__subtitle {
+            font-size: 2rem;
+          }
+          .card__title {
+            font-size: 2.5rem;
+          }
+          .card__line {
+            width: 15%;
+            margin: 1rem 7.5rem;
+          }
+        }
+      }
+    }
+  }
+  .nosotros {
+    padding: 0 2rem;
+    &__team {
+      &--container {
+        margin: 0 2rem;
+        &-card {
+          .nosotros__card {
+            &--info {
+              &-name {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__somos {
+      &--container {
+        &-text {
+          width: 90%;
+          font-size: 1.5rem;
+        }
+      }
+      &--video {
+        margin-top: 1rem;
+        height: 250px;
+      }
+    }
+  }
+  .galeria {
+    &__title {
+      font-size: 3.5rem;
+      padding: 5rem 0 3rem 0;
+    }
+    &__box {
+      &--img {
+        margin: 0 1rem;
+        &-img {
+          transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+            opacity 250ms linear;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+/* mayor igual 992px*/
+@include media-breakpoint-up(lg) {
+  .home {
+    &__portada {
+      &--container {
+        .portada__container {
+          &--img {
+            height: 650px;
+          }
+          &--info {
+            &-title {
+              font-size: 2rem;
+            }
+            &-text {
+              font-size: 4rem;
+            }
+          }
+        }
+      }
+    }
+    &__service {
+      &--articulo {
+        &-card {
+          .card__info {
+            &--line {
+              width: 15%;
+              margin: 1rem 10.2rem 2rem 10.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .service {
+    .service__manicure,
+    .service__otros {
+      .service__manicure--container,
+      .service__otros--container {
+        .service__manicure--container-card,
+        .service__otros--container-card {
+          width: 68%;
+          .card__img {
+            width: 400px;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+  .nosotros {
+    &__team {
+      &--title {
+        font-size: 4rem;
+      }
+    }
+    &__somos {
+      &--container {
+        &-text {
+          width: 100%;
+          font-size: 1.2rem;
+        }
+      }
+      &--video {
+        height: 350px;
+      }
+    }
+  }
+  footer {
+    .container__redes {
+      &--icono {
+        .icon {
+          span {
+            height: 50px;
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* mayor igual 1200px*/
+@include media-breakpoint-up(xl) {
+  .home {
+    &__service {
+      padding: 1rem;
+      &--articulo {
+        width: 20%;
+        &-card {
+          .card__img {
+            width: 220px;
+            height: 220px;
+          }
+          .card__info {
+            &--line {
+              width: 30%;
+              margin: 1rem 4.2rem 2rem 4.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .service {
+    .service__manicure,
+    .service__otros {
+      .service__manicure--container,
+      .service__otros--container {
+        .service__manicure--container-card,
+        .service__otros--container-card {
+          width: 30%;
+          margin: 0 10px;
+          .card__img {
+            width: 220px;
+            height: 220px;
+          }
+
+          .card__subtitle {
+            font-size: 1.2rem;
+          }
+          .card__title {
+            font-size: 1.5rem;
+          }
+          .card__text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .nosotros {
+    &__team {
+      &--container {
+        margin: 0 6.5rem;
+      }
+    }
+    &__somos {
+      margin: 0 6rem;
+    }
+  }
+  .galeria {
+    &__title {
+      padding: 5rem 0 3rem 0;
+    }
+    &__box {
+      &--img {
+        margin: 0rem;
+        &-img {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+/* mayor igual 1400px*/
+@include media-breakpoint-up(xxl) {
+  .home {
+    &__service {
+      &--articulo {
+        &-card {
+          .card__img {
+            width: 260px;
+            height: 260px;
+          }
+          .card__info {
+            &--line {
+              width: 30%;
+              margin: 1rem 5.2rem 2rem 5.2rem;
+
+            }
+            &--title {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .service {
+    .service__manicure,
+    .service__otros {
+      .service__manicure--container,
+      .service__otros--container {
+        .service__manicure--container-card,
+        .service__otros--container-card {
+          .card__img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+  .nosotros {
+    &__team {
+      &--container {
+        margin: 0 8rem;
+      }
+    }
+    &__somos {
+      margin: 0 8rem;
+    }
+  }
+}
+@media (min-width: 1440px) and (max-width: 2000px){
+  .home {
+    &__service {
+      &--articulo {
+        &-card {
+          .card__info {
+            &--line {
+              margin: 1rem 8rem 2rem 8rem;
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
