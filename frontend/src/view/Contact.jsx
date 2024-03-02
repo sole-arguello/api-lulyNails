@@ -71,15 +71,15 @@ const Contact = () => {
               <div className="contacto__ubicacion--container">
                 <p className="contacto__ubicacion--container-direction">
                   <i className="fa-solid fa-location-dot mx-3 fs-4 mt-lg-5"></i>
-                  Remonda xxx, CORDOBA
+                  Saavedra Lamas 446
                 </p>
                 <p className="contacto__ubicacion--container-phone">
-                  <i className="fa-solid fa-phone mx-3 fs-4"></i>+ 54 9 351
-                  213-8337
+                  <i className="fa-solid fa-phone mx-3 fs-4"></i>+ 54 9
+                  3515749649
                 </p>
                 <p className="contacto__ubicacion--container-email">
                   <i className="fa-solid fa-envelope mx-3 fs-4"></i>
-                  lourdesbustos67@gmail.com
+                  correodepruebas126@gmail.com
                 </p>
               </div>
 

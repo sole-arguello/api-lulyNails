@@ -42,7 +42,7 @@ const FrontPage = () => {
             alt="Portada Salon de Uñas"
           />
           <div className="portada__container--info carousel-caption d-none d-md-block">
-            <h5 className="portada__container--info-title">LulyNalis</h5>
+            <h5 className="portada__container--info-title">NailsLuly</h5>
             <p className="portada__container--info-text">Salon de Uñas</p>
           </div>
         </div>
