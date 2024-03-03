@@ -30,30 +30,28 @@ const Nav = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item fs-4 px-4">
-              <Link to="/">
-                <a className="nav-link fw-bold" href="">
-                  Home
-                </a>
+              <Link className="nav-link fw-bold" to="/">
+                Home
               </Link>
             </li>
             <li className="nav-item fs-4 px-4">
               <Link to="/services" className="nav-link fw-bold">
-                Services
+                Servicios
               </Link>
             </li>
             <li className="nav-item fs-4 px-4">
               <Link to="/us" className="nav-link fw-bold">
-                Us
+                Nosotros
               </Link>
             </li>
             <li className="nav-item fs-4 px-4">
               <Link to="/gallery" className="nav-link fw-bold">
-                Gallery
+                Galeria
               </Link>
             </li>
             <li className="nav-item fs-4 px-4">
               <Link to="/contact" className="nav-link fw-bold">
-                Contact
+                Contacto
               </Link>
             </li>
           </ul>
