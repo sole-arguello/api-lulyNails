@@ -5,7 +5,7 @@ import capping from "../assets/services/capping.webp";
 import belleza from "../assets/services/belleza.webp";
 import podologia from "../assets/services/podologia.jpg";
 import depilacion from "../assets/services/depilacion.jpg";
-import Footer from "../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 const Services = () => {
   return (

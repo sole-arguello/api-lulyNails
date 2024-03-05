@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import uñas3 from "../assets/gallery/unias3.jpeg";
 import uñas4 from "../assets/gallery/unias4.jpeg";
 import uñas5 from "../assets/gallery/unias5.jpeg";

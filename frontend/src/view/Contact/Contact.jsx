@@ -1,4 +1,4 @@
-import Footer from "../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 const Contact = () => {

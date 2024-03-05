@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import persona1 from "../assets/us/persona1.jpg";
 import persona2 from "../assets/us/persona2.jpg";
 import persona3 from "../assets/us/persona3.jpg";
