@@ -14,9 +14,11 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          alert("Correo enviado");
         },
         (error) => {
           console.log("FAILED...", error.text);
+          alert("No se envio el correo");
         }
       );
   };
