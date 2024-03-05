@@ -1,6 +1,27 @@
 import Footer from "../components/Footer/Footer";
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_68vqffy", "template_fpp2mdm", form.current, {
+        publicKey: "RNVfv_xMavy0iPBoU",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          alert("Correo enviado");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("No se envio el correo");
+        }
+      );
+  };
   return (
     <>
       <main
@@ -15,7 +36,11 @@ const Contact = () => {
             Contacto
           </h1>
           <div className="contacto__form-ubicacion--container row">
-            <form className="contacto__form col-lg-7 py-5 pb-md-5">
+            <form
+              className="contacto__form col-lg-7 py-5 pb-md-5"
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <div className="contacto__form--container border border-secondary p-3 rounded-3">
                 <div className="contacto__form--container-name mb-3">
                   <label
@@ -29,6 +54,7 @@ const Contact = () => {
                     className="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Ingrese su nombre"
+                    name="user_name"
                   />
                 </div>
                 <div className="contacto__form--container-email mb-3">
@@ -43,6 +69,7 @@ const Contact = () => {
                     className="form-control"
                     id="exampleFormControlInput1"
                     placeholder="name@example.com"
+                    name="user_email"
                   />
                 </div>
                 <div className="contacto__form--container-mje mb-3">
@@ -57,6 +84,7 @@ const Contact = () => {
                     id="exampleFormControlTextarea1"
                     rows="3"
                     placeholder="Ingrese su mensaje"
+                    name="message"
                   ></textarea>
                 </div>
                 <button
@@ -71,15 +99,15 @@ const Contact = () => {
               <div className="contacto__ubicacion--container">
                 <p className="contacto__ubicacion--container-direction">
                   <i className="fa-solid fa-location-dot mx-3 fs-4 mt-lg-5"></i>
-                  Remonda xxx, CORDOBA
+                  Saavedra Lamas 446
                 </p>
                 <p className="contacto__ubicacion--container-phone">
-                  <i className="fa-solid fa-phone mx-3 fs-4"></i>+ 54 9 351
-                  213-8337
+                  <i className="fa-solid fa-phone mx-3 fs-4"></i>+ 54 9
+                  3515749649
                 </p>
                 <p className="contacto__ubicacion--container-email">
                   <i className="fa-solid fa-envelope mx-3 fs-4"></i>
-                  lourdesbustos67@gmail.com
+                  correodepruebas126@gmail.com
                 </p>
               </div>
 
