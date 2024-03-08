@@ -9,7 +9,7 @@ export default function Appointment () {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/turno/create", {
+      const response = await fetch("http://localhost:8080/api/turno/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
