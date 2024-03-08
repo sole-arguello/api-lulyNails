@@ -23,5 +23,13 @@ export class JoiMsgError {
         'string.pattern.base': 'El campo "{#key}", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero',
     }
 
+    static errorMsAppointment = {
+        'string.base': 'El campo "{#key}" debe ser una cadena de caracteres',
+        'string.empty': 'El campo "{#key}" no debe estar vacio',
+        'string.email': 'Ingrese un "{#key}" valido',
+        'any.required': 'El campo "{#key}" es requerido',
+        'date.base': 'El campo "{#key}" debe ser una fecha valida',
+    }
+
 }
 
