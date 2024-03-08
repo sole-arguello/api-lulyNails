@@ -59,16 +59,14 @@ export default function Calendar() {
         ...prevSelectedDays,
         [date]: selectedCount + 1,
       }));
+
       setSelectedDate(date);
+
     } else {
         console.log(`No puedes seleccionar el día ${date} más de dos veces.`);
     }
 
-    setSelectedDays((prevSelectedDays) => ({
-      ...prevSelectedDays,
-      [date]: selectedCount + 1,
-    }))
-    setCurrentDate(date);
+    
   }
 
   const handleMonthChange = (forward) => {
