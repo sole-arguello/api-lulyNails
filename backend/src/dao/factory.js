@@ -16,6 +16,10 @@ switch(environment){
 
         const { UserManager } = await import (`../dao/managers/userManager.js`)
         userDao = new UserManager();
+
+        const { AppointmentManager } = await import (`../dao/managers/appointmentManager.js`)
+        userDao = new AppointmentManager();
+
         break;
 }
 
