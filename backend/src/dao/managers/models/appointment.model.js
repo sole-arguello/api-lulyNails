@@ -24,4 +24,4 @@ const appointmentSchema = new mongoose.Schema({
     // }
 });
 
-export const turnoModel = mongoose.model(appointmentCollection, appointmentSchema)
+export const appointmentModel = mongoose.model(appointmentCollection, appointmentSchema)

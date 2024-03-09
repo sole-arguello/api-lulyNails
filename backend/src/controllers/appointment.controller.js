@@ -1,6 +1,6 @@
 import { AppointmentDto } from "../dtos/appointment.dto.js";
 import { validateSchema } from "../helpers/validate.helper.js";
-import {appointmentSchema} from "../schemas/appointment/appintment.schema.js"
+import {appointmentSchema} from "../schemas/appointment/appointment.schema.js"
 import { AppointmentDaoService } from "../service/index.js";
 import { logger } from "../helpers/logger.helper.js";
 

@@ -1,30 +1,30 @@
 import joi from 'joi';
-import { JoiMsgError } from '../joi.messageError';
-
+import { JoiMsgError } from '../joi.messageError.js';
 
 export const appointmentSchema = joi.object({
     date: joi
         .date()
         .iso()
         .required()
-        .messages(...JoiMsgError.errorMsAppointment),
+        .messages({ ...JoiMsgError.errorMsAppointment }),
 
     hour: joi
         .string()
         .required()
-        .messages(...JoiMsgError.errorMsAppointment),
+        .messages({ ...JoiMsgError.errorMsAppointment }),
+
     formData: joi
         .object({
             name: joi
                 .string()
                 .required()
-                .messages(...JoiMsgError.errorMsAppointment),
+                .messages({ ...JoiMsgError.errorMsAppointment }),
+
             email: joi
                 .string()
                 .email()
                 .required()
-                .messages(...JoiMsgError.errorMsAppointment),
+                .messages({ ...JoiMsgError.errorMsAppointment }),
         })
         .required(),
-        
-})
+});

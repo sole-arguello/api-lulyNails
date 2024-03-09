@@ -1,5 +1,5 @@
 import { UserRepository } from "./repositories/user.repository.js";
-import { AppointmentRepository } from "./repositories/appointment.repository.js";
+import { AppointmentRepository } from "./repositories/appointment.repositoty.js";
 import { userDao } from '../dao/factory.js'
 import { appointmentDao } from '../dao/factory.js'
 
