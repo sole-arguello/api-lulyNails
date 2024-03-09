@@ -7,3 +7,16 @@ Content-Type: application/json
     "email": "laura@gmail.com",
     "password": "123stPml*"
 }
+
+POST http://localhost:8080/api/turno/register
+Content-Type: application/json
+
+{
+  "date": "2024-03-01",
+  "hour": "09:00 AM",
+  "formData": {
+    "name": "Juan Pérez",
+    "email": "juan@example.com",
+    "phone": "123456789"
+  }
+}
