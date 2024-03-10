@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const appointmentCollection = "turnos";
+const appointmentCollection = "appointments";
 
 const appointmentSchema = new mongoose.Schema({
 
@@ -13,8 +13,13 @@ const appointmentSchema = new mongoose.Schema({
         required: true
     },
     formData:{
-        type: Object,
-        required: true
+        type: {
+            name: String,
+            email: {unique: true, type: String},
+            phone: {type: String, unique: true},
+        },
+        required: true,
+        
     }
 
     // user: {
