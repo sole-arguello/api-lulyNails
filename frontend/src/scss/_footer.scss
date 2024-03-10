@@ -1,0 +1,118 @@
+footer {
+  color: map-get($color-text, text-6);
+  text-shadow: map-get($sombras, sombraText-1);
+  background: map-get($fondos, fondo-5);
+  box-shadow: map-get($sombras, sombraBox-3);
+  .container__redes {
+    &--icono {
+      display: inline-flex;
+      .icon {
+        z-index: 2;
+        margin: 0 20px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        @include alingItems-direction-justify(center, column, center);
+        transition: map-get($efectos , transicion-1 );
+        &:hover {
+          .tooltip {
+            top: -70px;
+            opacity: 1;
+            pointer-events: auto;
+            color: map-get($color-text , text-11 );
+            text-shadow: map-get($sombras , sombraText-6 );
+          }
+          span {
+            text-shadow: map-get($sombras , sombraText-6 );
+            i {
+              color: map-get($color-text , text-11 );
+            }
+          }
+        }
+        .tooltip {
+          top: 0px;
+          opacity: 0;
+          font-size: 20px;
+          position: absolute;
+          padding: 10px 18px;
+          border-radius: 25px;
+          pointer-events: none;     
+          color: map-get($color-text , text-11 );
+          background: map-get($fondos , fondo-6 );
+          box-shadow: map-get($sombras , sombraBox-6 );          
+          transition: map-get($efectos , transicion-1 );
+          &::before {
+            left: 50%;
+            content: "";
+            height: 15px;
+            width: 15px;
+            bottom: -8px;
+            position: absolute;
+            background: map-get($fondos , fondo-6 );
+            transform: translate(-50%) rotate(45deg);
+            transition: map-get($efectos , transicion-1 );
+          }
+        }
+        span {
+          z-index: 2;
+          height: 40px;
+          width: 40px;
+          display: block;
+          border-radius: 50%;
+          text-align: center;
+          position: relative;
+          background: map-get($fondos , fondo-6 );
+          box-shadow: map-get($sombras , sombraBox-6 );
+          i {
+            font-size: 25px;
+          }
+        }
+      }
+
+      .instagram:hover {
+        .tooltip {
+          background: map-get($fondos , fondo-7 );
+          &::before {
+            background: map-get($fondos , fondo-7 );
+          }
+        }
+        span {
+          background: map-get($fondos , fondo-7 );
+        }
+      }
+      .tiktok:hover {
+        .tooltip {
+          background: map-get($fondos , fondo-11 );
+          &::before {
+            background: map-get($fondos , fondo-11 );
+          }
+        }
+        span {
+          background: map-get($fondos , fondo-11 );
+        }
+      }
+      .email:hover{
+        .tooltip{
+          background: map-get($fondos , fondo-9 );
+          &::before{
+            background: map-get($fondos , fondo-9 );
+          }
+        }
+        span{
+          background: map-get($fondos , fondo-9 );
+        }
+      }
+      /*.link {
+        color: map-get($color-text, text-4);}*/
+    }
+  }
+  .container__autor {
+    &--name {
+      .link__autor {
+        text-decoration: none;
+        font-style: oblique;
+        color: map-get($color-text, text-4);
+      }
+    }
+  }
+}

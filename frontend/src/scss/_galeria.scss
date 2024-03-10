@@ -1,0 +1,19 @@
+.galeria {
+  color: map-get($color-text, text-1);
+  text-shadow: map-get($sombras, sombraText-2);
+  background: map-get($fondos, degrade1);
+  &__title {
+    font-size: 2rem;
+    padding: 5rem 0 2rem 0;
+  }
+  &__box {
+    margin: 0 1rem;
+    &--img {
+      &-img {
+        width: 100%;
+        border-radius: 5%;
+        box-shadow: map-get($sombras, sombraBox-2);
+      }
+    }
+  }
+}
