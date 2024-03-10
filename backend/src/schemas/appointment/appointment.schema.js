@@ -25,6 +25,10 @@ export const appointmentSchema = joi.object({
                 .email()
                 .required()
                 .messages({ ...JoiMsgError.errorMsAppointment }),
+            phone: joi
+                .string()
+                .required()
+                .messages({ ...JoiMsgError.errorMsAppointment }),
         })
         .required(),
 });

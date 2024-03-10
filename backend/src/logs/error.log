@@ -20,3 +20,66 @@
 [2024-01-29T17:46:35.564Z] info Development Environment
 [2024-01-29T17:46:35.585Z] info Server running on port 8080
 [2024-01-29T17:46:56.669Z] error Error al registrar el usuario: controller -  El campo "password", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero
+[2024-03-09T01:59:08.568Z] error Error al crear el turno: controller -  "formData.phone" is not allowed
+[2024-03-09T02:09:31.743Z] error Error al crear turno: manager - turnos validation failed: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:09:31.744Z] error Error al crear el turno: controller -  ValidationError: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:13:06.268Z] error Error al crear turno: manager - turnos validation failed: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:13:06.269Z] error Error al crear el turno: controller -  ValidationError: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:14:19.412Z] error Error al crear turno: manager - turnos validation failed: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:14:19.452Z] error Error al crear el turno: controller -  ValidationError: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:15:11.886Z] error Error al crear turno: manager - turnos validation failed: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:15:11.887Z] error Error al crear el turno: controller -  ValidationError: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:19:16.158Z] error Error al crear turno: manager - turnos validation failed: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:19:16.160Z] error Error al crear el turno: controller -  ValidationError: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:20:43.950Z] error Error al crear turno: manager - turnos validation failed: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:20:43.951Z] error Error al crear el turno: controller -  ValidationError: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:21:45.345Z] error Error al crear turno: manager - turnos validation failed: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:21:45.347Z] error Error al crear el turno: controller -  ValidationError: date: Path `date` is required., hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:22:45.586Z] error Error al crear turno: manager - turnos validation failed: hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T02:22:45.588Z] error Error al crear el turno: controller -  ValidationError: hour: Path `hour` is required., formData: Path `formData` is required.
+[2024-03-09T15:30:08.753Z] error Error al crear el turno: controller -  AppointmentDaoService.countAppointmentsForDate is not a function
+[2024-03-09T21:50:46.855Z] error Error al obtener turno: manager - Cannot read properties of undefined (reading 'email')
+[2024-03-09T21:50:46.857Z] error Error al crear el turno: controller -  TypeError: Cannot read properties of undefined (reading 'email')
+[2024-03-09T22:52:51.352Z] error Error al crear usuario: manager - E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T22:52:51.354Z] error Error al registrar el usuario: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T22:52:55.600Z] error Error al crear usuario: manager - E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T22:52:55.601Z] error Error al registrar el usuario: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T22:53:06.116Z] error Error al crear usuario: manager - E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T22:53:06.117Z] error Error al registrar el usuario: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T22:53:36.193Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "juan@example.com" }
+[2024-03-09T22:53:36.194Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "juan@example.com" }
+[2024-03-09T22:55:28.853Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T22:55:28.854Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:00:15.118Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:00:15.122Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:00:39.819Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:00:39.821Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:06:41.190Z] error Error al crear el turno: controller -  AppointmentDaoService.getUserForEmailPhone is not a function
+[2024-03-09T23:07:27.870Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:07:27.873Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:08:33.338Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:08:33.340Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:08:35.893Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:08:35.894Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:16:35.266Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:16:35.272Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:17:35.841Z] error Error al obtener usuario: manager - unknown top level operator: $in. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+[2024-03-09T23:17:35.843Z] error Error al crear el turno: controller -  MongoServerError: unknown top level operator: $in. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+[2024-03-09T23:20:33.606Z] error Error al obtener usuario: manager - unknown top level operator: $in. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+[2024-03-09T23:20:33.609Z] error Error al crear el turno: controller -  MongoServerError: unknown top level operator: $in. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+[2024-03-09T23:21:15.653Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:21:15.656Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:22:33.727Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:22:33.730Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:29:53.260Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:29:53.285Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:37:06.480Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:37:06.482Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:46:13.169Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:46:13.172Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:46:35.180Z] error Error al crear usuario: manager - E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T23:46:35.181Z] error Error al registrar el usuario: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.users index: email_1 dup key: { email: "laura@gmail.com" }
+[2024-03-09T23:53:24.291Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:53:24.293Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:56:25.304Z] error Error al crear turno: manager - E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
+[2024-03-09T23:56:25.307Z] error Error al crear el turno: controller -  MongoServerError: E11000 duplicate key error collection: Nails-Luly.appointments index: formData.email_1 dup key: { formData.email: "lalan@example.com" }
