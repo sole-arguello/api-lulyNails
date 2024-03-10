@@ -1,13 +1,4 @@
-POST http://localhost:8080/api/user/register
-Content-Type: application/json
-
-{
-    "first_name": "Lopez",
-    "last_name": "Laura",
-    "email": "laura@gmail.com",
-    "password": "123stPml*"
-}
-
+###
 POST http://localhost:8080/api/turno/register
 Content-Type: application/json
 
@@ -20,3 +11,18 @@ Content-Type: application/json
     "phone": "123456789"
   }
 }
+
+### 
+
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+    "first_name": "Lopez",
+    "last_name": "Laura",
+    "email": "laura@gmail.com",
+    "password": "123stPml*"
+}
+
+
+
