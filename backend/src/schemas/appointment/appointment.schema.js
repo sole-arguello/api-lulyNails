@@ -24,7 +24,8 @@ export const appointmentSchema = joi.object({
                 .string()
                 .email()
                 .required()
-                .messages({ ...JoiMsgError.errorMsAppointment }),
+                .messages({ ...JoiMsgError.errorMsAppointment, ...JoiMsgError.errorMessage }),
+                
             phone: joi
                 .string()
                 .required()
