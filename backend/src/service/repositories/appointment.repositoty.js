@@ -19,4 +19,8 @@ export class AppointmentRepository {
         
     }
 
+    async getAppointmentForEmail(email) {
+        return await this.dao.getAppointmentForEmail(email)
+    }
+
 }

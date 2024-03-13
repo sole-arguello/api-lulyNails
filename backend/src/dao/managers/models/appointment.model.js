@@ -15,7 +15,7 @@ const appointmentSchema = new mongoose.Schema({
     formData:{
         type: {
             name: String,
-            email: {unique: true, type: String},
+            email: {type: String, unique: true},
             phone: {type: String, unique: true},
         },
         required: true,
@@ -28,5 +28,6 @@ const appointmentSchema = new mongoose.Schema({
     //     required: true
     // }
 });
+
 
 export const appointmentModel = mongoose.model(appointmentCollection, appointmentSchema)

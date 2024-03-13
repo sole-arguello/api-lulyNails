@@ -13,6 +13,13 @@ export class AppointmentController{
             await validateSchema(appointmentSchema, req.body)
 
             const {date, hour, formData} = req.body
+            //console.log('formData', formData.email)
+            const emaiExist = await AppointmentDaoService.getAppointmentForEmail(formData.email)
+            //console.log('email', emaiExist)
+            if(emaiExist){
+                return res.status(201).json({message: 'El email ya existe'})
+            }
+
             const appointmentExist = await AppointmentDaoService.getAppointmentForDateHourFormData(date, hour, formData)
             if(appointmentExist) {
                 return res.status(201).json({message: 'El turno ya existe'})
@@ -41,17 +48,5 @@ export class AppointmentController{
         
     }
 
-    // static async getAppointment(req, res, next) {
-        
-    //     try {
-    //         const id = req.params.id
-    //         const getAppointment = await AppointmentDaoService.getAppointment(id)
-    //         return res.status(200).json({turno: getAppointment})
-            
-    //     } catch (error) {
-    //        logger.error('Error al obtener el turno: controller - ', error)
-    //        console.error('Error al obtener el turno: controller - ', error)
-    //        next(error)
-    //     }
-    // }
+
 }
