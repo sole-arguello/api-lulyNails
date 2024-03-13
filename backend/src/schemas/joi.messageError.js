@@ -13,6 +13,7 @@ export class JoiMsgError {
         'string.min': 'El campo "{#key}" debe tener minimo {#limit} caracteres',
         'string.max': 'El campo "{#key}" debe tener maximo {#limit} caracteres',
         'object.unknown': 'No se permiten campos adicionales en este objeto',
+        'unique.email': 'Ya existe un registro con el mismo correo electrónico',
     } 
 
     static errorMsgUser = {
@@ -21,6 +22,16 @@ export class JoiMsgError {
 
     static errorMsgPassword = {
         'string.pattern.base': 'El campo "{#key}", en la contraseña debe contener al menos una mayuscula, minusculas, un caracter especial y un numero',
+    }
+
+    static errorMsAppointment = {
+        'string.base': 'El campo "{#key}" debe ser una cadena de caracteres',
+        'string.empty': 'El campo "{#key}" no debe estar vacio',
+        'string.email': 'Ingrese un "{#key}" valido',
+        'any.required': 'El campo "{#key}" es requerido',
+        'date.base': 'El campo "{#key}" debe ser una fecha valida',
+        'unique.email': 'Ya existe un registro con el mismo correo electrónico',
+    
     }
 
 }

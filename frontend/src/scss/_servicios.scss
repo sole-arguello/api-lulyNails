@@ -1,0 +1,58 @@
+.service {
+  background: map-get($fondos, degrade1);
+  &__manicure,
+  &__otros {
+    &--title, 
+    &--title {
+      font-size: 2.5rem;
+      color: map-get($color-text, text-1);
+      text-shadow: map-get($sombras, sombraBox-1);
+    }
+    &--container,
+    &--container {
+      &-card,
+      &-card {
+        @include flex-col-center;
+        .card__img {
+          width: 220px;
+          height: 220px;
+          border-radius: 100%;
+          /*border: map-get($bordes, borde-4);*/
+        }
+
+        .card__subtitle {
+          font-size: 1.2rem;
+          font-style: oblique;
+        }
+        .card__title {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: map-get($color-text, text-1);
+          text-shadow: map-get($sombras, sombraText-5);
+        }
+        .card__line {
+          width: 20%;
+          height: 0.7%;
+          border: 1px solid;
+          border-radius: 100%;
+          background: map-get($fondos, fondo-5);
+          color: map-get($color-text, text-8);
+        }
+        .card__text {
+          font-size: 1.2rem;
+          text-align: left;
+          font-weight: 100;
+          line-height: 7mm;
+        }
+      }
+      .service__manicure--container-card{
+        background: map-get($fondos, fondo-1);
+        border: map-get($bordes, borde-1);
+      }
+      .service__otros--container-card{
+        background: map-get($fondos, fondo-2);
+        border: map-get($bordes, borde-2);
+      }
+    }
+  }
+}

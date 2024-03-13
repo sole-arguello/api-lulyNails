@@ -1,0 +1,40 @@
+.contacto {
+  color: map-get($color-text, text-1);
+  text-shadow: map-get($sombras, sombraText-2);
+  background: map-get($fondos, degrade3), $img-fondo1;
+  @include centrado-fondo-img(cover, 20%, center, center 20%);
+  .contacto__form-ubicacion {
+    .contacto__form-ubicacion--title {
+      font-size: 3rem;
+    }
+    .contacto__form-ubicacion--container {
+      .contacto__form {
+        .contacto__form--container {
+          .contacto__form--container-btn {
+            @include medida-btn(30%, 1.2rem, 0.5rem 0, 5%);
+            color: map-get($color-text, text-1);
+            border: map-get($bordes, borde-6);
+          }
+        }
+      }
+      .contacto__ubicacion {
+        .contacto__ubicacion--container {
+          .contacto__ubicacion--container-direction {
+            color: map-get($color-text, text-9);
+          }
+          .contacto__ubicacion--container-phone {
+            color: map-get($color-text, text-9);
+          }
+          .contacto__ubicacion--container-email {
+            color: map-get($color-text, text-9);
+          }
+        }
+      }
+    }
+  }
+  .contacto__preguntas {
+    .contacto__preguntas--title {
+      font-size: 3rem;
+    }
+  }
+}

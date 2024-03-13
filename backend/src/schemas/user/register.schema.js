@@ -34,7 +34,11 @@ export const registerSchema = joi.object({
     password: joi
         .string()
         .required()
+<<<<<<< HEAD
         // .pattern(/^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[¡!$%^&*()_+|~={}:";'<>¿?,.#])[a-zA-Z0-9¡!$%^&*()_+|~={}:";'<>¿?,.#].{6,}$/)
         .pattern(/^(?=\S+$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[¡!$%^&*()_+|~=`{}:";'<>¿?,.])[a-zA-Z0-9¡!$%^&*()_+|~=`{}:";'<>¿?,.]{8,}$/)
+=======
+        .pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+|~=`{}:";'<>?,.\/]).{8,}$/)
+>>>>>>> front-back-pruebas
         .messages({ ...JoiMsgError.errorMsgPassword, ...JoiMsgError.errorMessage }),
 })
