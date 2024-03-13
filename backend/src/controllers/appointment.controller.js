@@ -13,9 +13,9 @@ export class AppointmentController{
             await validateSchema(appointmentSchema, req.body)
 
             const {date, hour, formData} = req.body
-            console.log('formData', formData.email)
+            //console.log('formData', formData.email)
             const emaiExist = await AppointmentDaoService.getAppointmentForEmail(formData.email)
-            console.log('email', emaiExist)
+            //console.log('email', emaiExist)
             if(emaiExist){
                 return res.status(201).json({message: 'El email ya existe'})
             }
