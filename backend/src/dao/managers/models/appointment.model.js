@@ -3,31 +3,32 @@ import mongoose from "mongoose";
 const appointmentCollection = "appointments";
 
 const appointmentSchema = new mongoose.Schema({
+  date: {
+    type: Date,
+    required: true,
+  },
+  hour: {
+    type: String,
+    required: true,
+  },
+  subServices: {
+    type: Object,
+    required: true,
+    
+  },
+  formClient: {
+    type: Object,
+    required: true,
+  },
 
-    date:{
-        type: Date,
-        required: true
-    },
-    hour:{
-        type: String,
-        required: true
-    },
-    formData:{
-        type: {
-            name: String,
-            email: {type: String, unique: true},
-            phone: {type: String, unique: true},
-        },
-        required: true,
-        
-    }
-
-    // user: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: "users",
-    //     required: true
-    // }
+  // client: {
+  //     type: mongoose.Schema.Types.ObjectId,
+  //     ref: "clients",
+  //     required: true
+  // }
 });
 
-
-export const appointmentModel = mongoose.model(appointmentCollection, appointmentSchema)
+export const appointmentModel = mongoose.model(
+  appointmentCollection,
+  appointmentSchema
+);

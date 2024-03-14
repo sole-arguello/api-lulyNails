@@ -13,7 +13,31 @@ export const appointmentSchema = joi.object({
         .required()
         .messages({ ...JoiMsgError.errorMsAppointment }),
 
-    formData: joi
+    subServices: joi
+        .object({
+            semipermanente: joi
+                .boolean()
+                .options({ convert: true })
+                .messages({ ...JoiMsgError.errorMsAppointment }),
+            esculpidas: joi
+                .boolean()
+                .options({ convert: true })
+                .messages({ ...JoiMsgError.errorMsAppointment }),
+            kapping: joi
+                .boolean()
+                .options({ convert: true })
+                .messages({ ...JoiMsgError.errorMsAppointment }),
+            pies: joi
+                .boolean()
+                .options({ convert: true })
+                .messages({ ...JoiMsgError.errorMsAppointment }),
+            retirado: joi
+                .boolean()
+                .options({ convert: true })
+                .messages({ ...JoiMsgError.errorMsAppointment }),
+        }),
+
+    formClient: joi
         .object({
             name: joi
                 .string()
@@ -25,7 +49,6 @@ export const appointmentSchema = joi.object({
                 .email()
                 .required()
                 .messages({ ...JoiMsgError.errorMsAppointment, ...JoiMsgError.errorMessage }),
-                
             phone: joi
                 .string()
                 .required()

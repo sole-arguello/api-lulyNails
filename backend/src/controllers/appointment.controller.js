@@ -12,27 +12,34 @@ export class AppointmentController{
             
             await validateSchema(appointmentSchema, req.body)
 
-            const {date, hour, formData} = req.body
-            //console.log('formData', formData.email)
-            const emaiExist = await AppointmentDaoService.getAppointmentForEmail(formData.email)
-            //console.log('email', emaiExist)
-            if(emaiExist){
-                return res.status(201).json({message: 'El email ya existe'})
+            const {date, hour, formClient, subServices} = req.body     
+            
+            //valido que por medio de los datos ingresados no exista un turno 
+            const appointmentExist = await AppointmentDaoService.getAppointmentForDateHourFormData(date, hour, subServices, formClient)
+            if(appointmentExist) {
+                return res.status(201).json({message: 'Ya tiene un turno para esta fecha'})
             }
 
-            const appointmentExist = await AppointmentDaoService.getAppointmentForDateHourFormData(date, hour, formData)
-            if(appointmentExist) {
-                return res.status(201).json({message: 'El turno ya existe'})
+            //valido que en el dia el cliente ya tenga un turno
+            const appointmentForClient = await AppointmentDaoService.getAppointmentForClientAndDate(formClient, date)
+            if(appointmentForClient) {
+                return res.status(201).json({message: 'Ud ya tiene un turno para esta fecha'})
             }
-            
+
             //valido mismo dia hasta 3 turnos
             const appointmentForDate = await AppointmentDaoService.countAppointmentsForDate(date)
-
             if(appointmentForDate >= 3) {
-                return res.status(201).json({message: 'Ya no hay turnos disponibles'})
+                return res.status(201).json({message: 'Ya no hay turnos disponibles para este dia'})
             }
+
+            //valido que el horario no este ocupado en el mismo dia
+            const appointmentForHourAndDate = await AppointmentDaoService.countAppointmentsForHourAndDate(hour, date)
+            if(appointmentForHourAndDate >= 1) {
+                return res.status(201).json({message: 'Ya no hay turnos disponibles para esta hora'})
+            } 
+
             //creo la instancia del dto
-            const appointmentDto = new AppointmentDto(date, hour, formData)
+            const appointmentDto = new AppointmentDto(date, hour, subServices, formClient)
             if(appointmentDto) {
                 await AppointmentDaoService.createAppointment(appointmentDto)
                 return res.status(201).json({message: 'Turno creado', appointment: {...appointmentDto}})
@@ -48,5 +55,17 @@ export class AppointmentController{
         
     }
 
-
+    // static async getAppointment(req, res, next) {
+        
+    //     try {
+    //         const id = req.params.id
+    //         const getAppointment = await AppointmentDaoService.getAppointment(id)
+    //         return res.status(200).json({turno: getAppointment})
+            
+    //     } catch (error) {
+    //        logger.error('Error al obtener el turno: controller - ', error)
+    //        console.error('Error al obtener el turno: controller - ', error)
+    //        next(error)
+    //     }
+    // }
 }

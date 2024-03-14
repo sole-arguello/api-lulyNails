@@ -14,13 +14,22 @@ export class AppointmentRepository {
         return await this.dao.countAppointmentsForDate(date)
     }
 
-    async getAppointmentForDateHourFormData(date, hour, formData) {
-        return await this.dao.getAppointmentForDateHourFormData(date, hour, formData)
+    async countAppointmentsForHourAndDate(hour, date) {
+        return await this.dao.countAppointmentsForHourAndDate(hour, date)
+    }
+
+    async getAppointmentForDateHourFormData(date, hour, subServices, formClient) {
+        return await this.dao.getAppointmentForDateHourFormData(date, hour, subServices, formClient)
         
     }
 
-    async getAppointmentForEmail(email) {
-        return await this.dao.getAppointmentForEmail(email)
+    async getAppointmentForClientAndDate(formClient, date) {
+        return await this.dao.getAppointmentForClientAndDate(formClient, date)
     }
+
+    async getAppointmentSubServices(subServices) {
+        return await this.dao.getAppointmentSubServices(subServices)
+    }
+
 
 }

@@ -17,43 +17,64 @@ export class AppointmentManager {
         }
     }
 
-    async countAppointmentsForDate(date) {
-        try {
-            const count = await this.model.countDocuments({date})
-            return count
-        } catch (error) {
-            logger.error('Error al contar el limite de turnos: manager -', error)
-            throw new Error(error)
-        }
-    }
     async getAppointment(id) {
         try {
             const getAppointment = await this.model.findById(id)
             return getAppointment
         } catch (error) {
-            logger.error('Error al obtener turno por id: manager -', error)
+            logger.error('Error al obtener turno: manager -', error)
             throw new Error(error)
         }
     }
-    async getAppointmentForDateHourFormData(date, hour, formData) {
+
+    async countAppointmentsForDate(date) {
         try {
-            const getAppointment = await this.model.findOne({date, hour, formData})
+            const count = await this.model.countDocuments({date})
+            return count
+        } catch (error) {
+            logger.error('Error al contar turnos: manager -', error)
+            throw new Error(error)
+        }
+    }
+
+    async countAppointmentsForHourAndDate(hour, date) {
+        try {
+            const count = await this.model.countDocuments({hour, date})
+            return count
+        } catch (error) {
+            logger.error('Error al contar turnos: manager -', error)
+            throw new Error(error)
+        }
+    }
+
+    async getAppointmentForClientAndDate(formClient, date) {
+        try {
+            const getClientDate = await this.model.findOne({formClient, date})
+            return getClientDate
+        } catch (error) {
+            logger.error('Error al obtener cliente y fecha: manager -', error)
+            throw new Error(error)
+        }
+    }
+    
+    async getAppointmentForDateHourFormData(date, hour, subServices, formClient) {
+        try {
+            console.log('servicio', subServices)
+            const getAppointment = await this.model.findOne({date, hour, subServices, formClient })
             return getAppointment
             
         } catch (error) {
-            logger.error('Error al obtener los datos del turno: manager -', error)
+            logger.error('Error al obtener turno: manager -', error)
             throw new Error(error)  
         }
     }
 
-    async getAppointmentForEmail(email) {
+    async getAppointmentSubServices(subServices) {
         try {
-            //console.log('email manager', email)
-            const getAppointment = await this.model.findOne({formData: {email}})
-            console.log('get manager', getAppointment)
+            const getAppointment = await this.model.find(subServices)
             return getAppointment
         } catch (error) {
-            logger.error('Error al obtener el email del turno: manager -', error)
+            logger.error('Error al obtener turno: manager -', error)
             throw new Error(error)
         }
     }
