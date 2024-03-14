@@ -36,7 +36,15 @@ export class AppointmentController{
             const appointmentForHourAndDate = await AppointmentDaoService.countAppointmentsForHourAndDate(hour, date)
             if(appointmentForHourAndDate >= 1) {
                 return res.status(201).json({message: 'Ya no hay turnos disponibles para esta hora'})
-            } 
+            }
+        
+            
+            //Validar que solo se pueda combinar cualquier subServicio con el de semipermanente para pies
+            if (subServices.includes("pies") ||
+            (subServices.includes("semipermanente") || subServices.includes("esculpidas") 
+            || subServices.includes("kapping") || subServices.includes("retirado"))) {
+                return res.status(400).json({ message: 'Debe combinar cualquier servicio con el de pies' });
+            }   
 
             //creo la instancia del dto
             const appointmentDto = new AppointmentDto(date, hour, subServices, formClient)
