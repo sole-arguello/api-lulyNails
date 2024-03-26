@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
-import uñas3 from "../assets/gallery/unias3.jpeg";
-import uñas4 from "../assets/gallery/unias4.jpeg";
-import uñas5 from "../assets/gallery/unias5.jpeg";
-import uñas6 from "../assets/gallery/unias6.jpeg";
-import uñas2 from "../assets/gallery/unias2.jpeg";
-import uñas7 from "../assets/gallery/unias7.jpeg";
-import uñas8 from "../assets/gallery/unias8.jpeg";
-import uñas9 from "../assets/gallery/unias9.jpeg";
+import uñas3 from "../../assets/gallery/unias3.jpeg";
+import uñas4 from "../../assets/gallery/unias4.jpeg";
+import uñas5 from "../../assets/gallery/unias5.jpeg";
+import uñas6 from "../../assets/gallery/unias6.jpeg";
+import uñas2 from "../../assets/gallery/unias2.jpeg";
+import uñas7 from "../../assets/gallery/unias7.jpeg";
+import uñas8 from "../../assets/gallery/unias8.jpeg";
+import uñas9 from "../../assets/gallery/unias9.jpeg";
 
 const Gallery = () => {
   return (

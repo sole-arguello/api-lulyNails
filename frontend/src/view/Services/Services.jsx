@@ -1,10 +1,10 @@
 import React from "react";
-import semi from "../assets/services/semi.jpg";
-import uñas from "../assets/services/unias-gel.jpg";
-import capping from "../assets/services/capping.webp";
-import belleza from "../assets/services/belleza.webp";
-import podologia from "../assets/services/podologia.jpg";
-import depilacion from "../assets/services/depilacion.jpg";
+import semi from "../../assets/services/semi.jpg";
+import uñas from "../../assets/services/unias-gel.jpg";
+import capping from "../../assets/services/capping.webp";
+import belleza from "../../assets/services/belleza.webp";
+import podologia from "../../assets/services/podologia.jpg";
+import depilacion from "../../assets/services/depilacion.jpg";
 import Footer from "../../components/Footer/Footer";
 
 const Services = () => {
